@@ -9,18 +9,36 @@
 </head>
 <body>
 
-<header>
-  <div class="logo">mali.<strong>studio</strong></div>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#about">Über mich</a>
-    <a href="#services">Leistungen</a>
-    <a href="#contact"><button class="cta">Kontaktiere mich</button></a>
+<header class="site-header">
+  <div class="header-container">
+    <a href="#home" class="logo">
+      <img src="/img/logo.png" alt="mali.studio Logo" />
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="main-nav desktop-nav">
+      <a href="#about">Über mich</a>
+      <a href="#services">Leistungen</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+
+    <a href="#contact" class="cta-button desktop-nav">Kontaktiere mich</a>
+
+    <!-- Mobile Burger Button -->
+    <div class="menu-toggle" onclick="toggleMobileNav()">☰</div>
+  </div>
+
+  <!-- Mobile Nav Menu -->
+  <nav class="main-nav mobile-nav" id="mobile-nav">
+    <a href="#about" onclick="closeMobileNav()">Über mich</a>
+    <a href="#services" onclick="closeMobileNav()">Leistungen</a>
+    <a href="#contact" onclick="closeMobileNav()">Kontakt</a>
   </nav>
 </header>
 
+
 <!-- Hero Section erweitert -->
-<section class="hero">
+<section class="hero" id="home">
   <div class="hero-inner">
 
     <h1>
@@ -65,24 +83,22 @@
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" alt=".NET / WebAPI" title=".NET / WebAPI" />
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/quarkus/quarkus-original.svg" alt="Quarkus" title="Quarkus" />
     </div>
-
-  </div>
-
-  <div class="social-icons">
-    <a href="https://www.linkedin.com/in/laurent-mali" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/LaurentMali" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://www.instagram.com/mali_webdesignstudio" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="mailto:lmali.webdesignstudio@gmail.com"><i class="fas fa-envelope"></i></a>
   </div>
 </section>
 
-<section class="about-centered">
+<section class="about-centered" id="about">
   <h2>Wer hinter <span class="highlight">mali.studio</span> steckt:</h2>
   <hr class="divider" />
   <p>Mein Name ist Laurent Mali – leidenschaftlicher Webentwickler mit Sinn für Design und Technik.</p>
   <p>Ich habe die HTL Leonding im Bereich Informatik abgeschlossen und konnte durch Praktika in Softwarefirmen wertvolle Erfahrung sammeln.</p>
   <p>Mein Ziel: Webseiten, die nicht nur gut aussehen, sondern blitzschnell, sauber und benutzerfreundlich funktionieren.</p>
   <p>Du willst eine Seite, die Eindruck macht? Dann hinterlasse mir eine Nachricht!</p>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/laurent-mali" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/LaurentMali" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/mali_webdesignstudio" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:lmali.webdesignstudio@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
 </section>
 
 
@@ -129,5 +145,72 @@
 
   </div>
 </section>
+
+<section class="contact-section" id="contact">
+  <div class="contact-left">
+    <h2>Bereit für deine eigene Webseite?</h2>
+    <p>Du hast ein Projekt im Kopf oder einfach nur Fragen?</p>
+    <p><strong>Ich freu mich auf deine Nachricht – ganz egal, ob du schon genau weißt, was du willst, oder einfach mal losstarten möchtest.</strong></p>
+
+    <div class="contact-timeline">
+      <div class="step">
+        <span class="icon">📝</span>
+        <p>Idee & Planung</p>
+      </div>
+      <div class="arrow">→</div>
+      <div class="step">
+        <span class="icon">💻</span>
+        <p>Design & Umsetzung</p>
+      </div>
+      <div class="arrow">→</div>
+      <div class="step">
+        <span class="icon">🚀</span>
+        <p>Launch & Support</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-form">
+    <form action="https://formspree.io/f/xbloeavd" method="POST">
+      <label>Vorname</label>
+      <input type="text" name="name" placeholder="Dein Name" required />
+
+      <label>Nachname</label>
+      <input type="text" name="surname" placeholder="Dein Nachname" required />
+
+      <label>Email</label>
+      <input type="email" name="email" placeholder="Bsp.: mail.studio@gmail.com" required />
+
+      <label>Nachricht</label>
+      <textarea name="message" placeholder="Hinterlasse mir eine Nachricht" required></textarea>
+
+      <button type="submit">Abschicken</button>
+    </form>
+  </div>
+</section>
+<script>
+  function toggleMobileNav() {
+    document.getElementById('mobile-nav').classList.toggle('show');
+  }
+
+  function closeMobileNav() {
+    document.getElementById('mobile-nav').classList.remove('show');
+  }
+</script>
+
 </body>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="logo">
+      <img src="/img/logo.png" alt="mali.studio Logo" />
+    </div>
+    <p>© 2025 mali.studio – Alle Rechte vorbehalten</p>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/laurent-mali" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/LaurentMali" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:lmali.webdesignstudio@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.instagram.com/mali_webdesignstudio" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    </div>
+</footer>
 </html>
