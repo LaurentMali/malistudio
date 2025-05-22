@@ -1,63 +1,133 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mali.studio</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mali.studio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo">mali.studio</div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#about">Über mich</a>
-            <a href="#services">Leistungen</a>
-            <a href="#contact"><button>Contact me</button></a>
-        </nav>
-    </header>
 
-    <section class="hero">
-        <img src="img/avatar.png" alt="Avatar" class="avatar" />
-        <div class="hero-text">
-            <h1>Professionelles Webdesign mit Fokus auf Performance & Design.</h1>
-            <p>Ich entwickle moderne, schnelle und responsive Websites – maßgeschneidert für dein Business.</p>
-            <a href="#contact"><button class="primary">Starte dein Projekt</button></a>
-        </div>
-    </section>
+<header>
+  <div class="logo">mali.<strong>studio</strong></div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">Über mich</a>
+    <a href="#services">Leistungen</a>
+    <a href="#contact"><button class="cta">Kontaktiere mich</button></a>
+  </nav>
+</header>
 
-    <section class="about" id="about">
-        <h2>Wer hinter <span>mali.studio</span> steckt:</h2>
-        <p>
-            Ich habe die HTL Leonding im Bereich Informatik erfolgreich abgeschlossen und dadurch in den letzten Jahren viel praktische und theoretische Erfahrung gesammelt. Heute nutze ich diese Erfahrung, um Webseiten zu entwickeln, die nicht nur gut aussehen, sondern auch technisch sauber funktionieren.
-        </p>
-    </section>
+<!-- Hero Section erweitert -->
+<section class="hero">
+  <div class="hero-inner">
 
-    <section class="services" id="services">
-        <h2>Leistungen</h2>
-        <div class="service-grid">
-            <div class="service"> <h3>Webseiten-Erstellung</h3> <p>Ich entwickle moderne, responsive Webseiten – individuell und schnell</p> </div>
-            <div class="service"> <h3>Technische Umsetzung</h3> <p>Entwicklung mit den modernsten Technologien – performant & wartbar</p> </div>
-            <div class="service"> <h3>SEO & Performance Optimierung</h3> <p>Schnelle Ladezeiten & noch mehr Reichweite</p> </div>
-            <div class="service"> <h3>Hosting & Domain-Beratung</h3> <p>Unterstützung bei der Wahl des Hostings und Einrichtung</p> </div>
-            <div class="service"> <h3>Wartung & Support</h3> <p>Updates, Anpassungen & Fehlerbehebungen nach Bedarf</p> </div>
-        </div>
-    </section>
+    <h1>
+      Professionelles Webdesign<br />
+      mit Fokus auf Performance & Design
+    </h1>
 
-    <section class="contact" id="contact">
-        <div class="contact-text">
-            <h2>Bereit für deine eigene Webseite?</h2>
-            <p>Du hast ein Projekt im Kopf oder einfach nur Fragen?</p>
-            <p>Ich freu mich auf deine Nachricht – ganz egal, ob du schon genau weißt, was du willst, oder einfach mal losstarten willst.</p>
-        </div>
-        <form class="contact-form">
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Surname" />
-            <input type="email" placeholder="Bsp.: mail.studio@gmail.com" />
-            <textarea placeholder="Hinterlasse mir eine Nachricht"></textarea>
-            <button type="submit">Abschicken</button>
-        </form>
-    </section>
+    <div class="hero-description">
+      <p>
+        Ich entwickle moderne, schnelle und responsive Websites –<br />
+        maßgeschneidert für dein Business.
+      </p>
+      <p>
+        Dabei kombiniere ich klares Design mit sauberem Code, damit deine Website<br />
+        nicht nur gut aussieht, sondern auch richtig performt.
+      </p>
+    </div>
+
+    <a href="#contact"><button class="start-btn">Starte dein Projekt</button></a>
+
+    <p class="hero-subline">
+      Bereit, deine Website auf das nächste Level zu bringen?<br />
+      Hier sind einige Technologien, die ich verwende:
+    </p>
+
+    <div class="tech-stack">
+      <!-- Deine Icons bleiben hier unverändert -->
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" title="HTML5" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" title="CSS3" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" title="TypeScript" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" title="Angular" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" title="C#" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" title="Kotlin" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" title="Kubernetes" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL / SQL / DB" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" alt=".NET / WebAPI" title=".NET / WebAPI" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/quarkus/quarkus-original.svg" alt="Quarkus" title="Quarkus" />
+    </div>
+
+  </div>
+
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/laurent-mali" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/LaurentMali" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/mali_webdesignstudio" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:lmali.webdesignstudio@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+</section>
+
+<section class="about-centered">
+  <h2>Wer hinter <span class="highlight">mali.studio</span> steckt:</h2>
+  <hr class="divider" />
+  <p>Mein Name ist Laurent Mali – leidenschaftlicher Webentwickler mit Sinn für Design und Technik.</p>
+  <p>Ich habe die HTL Leonding im Bereich Informatik abgeschlossen und konnte durch Praktika in Softwarefirmen wertvolle Erfahrung sammeln.</p>
+  <p>Mein Ziel: Webseiten, die nicht nur gut aussehen, sondern blitzschnell, sauber und benutzerfreundlich funktionieren.</p>
+  <p>Du willst eine Seite, die Eindruck macht? Dann hinterlasse mir eine Nachricht!</p>
+</section>
+
+
+<section class="leistungen" id="services">
+  <h2>Leistungen</h2>
+  <hr class="divider" />
+  <div class="leistungen-grid">
+
+    <div class="card">
+      <i class="fas fa-laptop-code"></i>
+      <h3>Webseiten-Erstellung</h3>
+      <p>Ich entwickle moderne,<br>responsive Webseiten –<br>individuell und schnell</p>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-code"></i>
+      <h3>Technische Umsetzung</h3>
+      <p>Entwicklung mit den<br>modernsten Technologien –<br>performant & wartbar</p>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-search"></i>
+      <h3>SEO & Performance Optimierung</h3>
+      <p>Schnelle Ladezeiten &<br>noch mehr Reichweite</p>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-globe"></i>
+      <h3>Hosting & Domain-Beratung</h3>
+      <p>Unterstützung bei der Wahl<br>des Hostings und Einrichtung</p>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-headset"></i>
+      <h3>Wartung & Support</h3>
+      <p>Updates, Anpassungen &<br>Fehlerbehebungen nach Bedarf</p>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-share-nodes"></i>
+      <h3>Social Media Präsenz</h3>
+      <p>Verknüpfung deiner Website mit Social Media – für mehr Reichweite & Interaktion.</p>
+    </div>
+
+  </div>
+</section>
 </body>
 </html>
